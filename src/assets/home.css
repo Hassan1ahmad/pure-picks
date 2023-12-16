@@ -1,0 +1,25 @@
+@media only screen and (min-width: 821px){
+    .legend{
+        top: 385px;
+        bottom: 460px !important;
+        width: 20% !important;
+        left: 84% !important;
+        background-color: #3498db !important;
+    }
+    /* Add this CSS to your stylesheet */
+  
+    .carousel-slider{
+        height: 460px;
+    }
+   
+}
+.legend{
+    background-color: #3498db !important;
+
+}
+
+.home-background{
+    background-color:  #333333  ;
+    padding-top: 60px;
+   
+}

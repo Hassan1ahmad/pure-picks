@@ -1,0 +1,186 @@
+/* Navbar.css */
+
+.background-desktop {
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    background-color: #333333;
+    color: #379583;
+    padding: 0 20px;
+    z-index: 11;
+  }
+  
+  .left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 200px;
+    height: 46px;
+    margin-right: 10px;
+  }
+  .pure{
+    width: 200px;
+    height: 44px
+  }
+ 
+  
+  .nav ul {
+    list-style-type: none;
+    display: flex;
+    margin-bottom: 0 !important;
+  }
+  
+  .nav li {
+    margin-right: 20px;
+    cursor: pointer;
+  }
+  
+  .right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .cart {
+    font-size: 1.2em;
+  }
+
+  
+.cart p {
+  display: inline-block;
+  color: #fff;  
+   
+  padding: 1px 4px;  
+  font-size: 21px;  
+
+}
+  /* Add styling for the cart icon */
+  .cart i {
+    color: #FFFFFF;
+    cursor: pointer;
+
+  }
+  .cart i:hover {
+    color: #67FCF0; /* Change this to your desired hover color */
+  }
+
+/* Remove default link styles */
+.nav a {
+    text-decoration: none;
+    color: rgb(225, 225, 232);
+    transition: color 0.3s ease;
+  }
+  
+  /* Add hover effect for links */
+  .nav a:hover {
+    color: #67FCF0; /* Change this to your desired hover color */
+  }
+  
+  /* Add styling for active link */
+  .nav a.active {
+    font-weight: bold; /* Change this to your desired active link style */
+    color: #389583; /* Change this to your desired active link color */
+  }
+  .background-mobile,
+  .mobile-nav{
+    display: none;
+  }
+
+
+
+
+
+
+
+  @media only screen and (max-width: 821px){
+    /* Mobile styles */
+    .background-desktop{
+        display: none;
+    }
+.background-mobile {
+      position: fixed;
+      top: 0;
+      width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    background-color: #333333;
+    color: #FFFFFF;
+    padding: 0 10px;
+    z-index: 11;
+  }
+  .logo{
+    display: flex;
+    align-items: center;
+  }
+  .pure{
+    margin-right: 16px;
+  }
+  
+  .menu-icon {
+    font-size: 1.5em;
+    cursor: pointer;
+    
+  }
+  
+  .mobile-nav {
+    display: block;
+    position: fixed;
+    top: 60px;
+    left: 25%;
+    height: 100%;
+    width: 75%;
+    background-color: #333333;
+    animation: slideDown 0.5s ease;
+    z-index: 11;
+  }
+  @keyframes slideDown {
+    from {
+      transform: translateY(100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+  
+  .mobile-nav ul {
+    list-style-type: none;
+    padding: 10px;
+  }
+  
+  .mobile-nav li {
+    margin-bottom: 20px;
+  }
+  
+  .mobile-nav a {
+    text-decoration: none;
+    color: #FFFFFF;
+    transition: color 0.3s ease;
+  }
+  
+  .mobile-nav a:hover {
+    color: #67FCF0; /* Change this to your desired hover color */
+  }
+  .cart i{
+    padding: 5px;
+  }
+  .cart i p {
+    display: inline-block;
+    color: #fff;  
+     
+    padding: 1px 4px;  
+    font-size: 21px;  
+  
+  }
+
+
+
+  }
+    

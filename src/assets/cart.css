@@ -1,0 +1,261 @@
+.cart-container{
+    display: flex;
+}
+.left-cart-items{
+    margin-top: 100px;
+    width: 65%;
+    padding-left: 15px;
+}
+.right-payment-card{
+    margin-top: 60px;
+    margin-bottom: 15px;
+    width: 35%;
+}
+
+.cart-card{
+    margin-left: 15px;
+    margin-bottom: 30px;
+    padding: 10px;
+    height: 124px;
+    width:800px ;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    -webkit-box-shadow:0px 0px 10px 0px rgba(0,0,0,0.9);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.9);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.9);
+}
+.cart-card-img{
+    width: 100px;
+    height: 102px;
+}
+.left-cart-card{
+    display: flex;
+}
+.cart-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 408px;
+    min-width: 408px;
+}
+.right-cart-card{
+    display: flex;
+}
+.cart-price{
+    padding-right: 43px;
+    padding-left: 59px;
+    width: 70px;
+    
+}
+.cart-del{
+    margin-left: 86px;
+    cursor: pointer;
+    
+}
+.cart-del i{
+    transition: transform 0.3s;
+}
+.cart-del:hover i {
+    transform: scale(1.5);
+  }
+  /* ================card=========== */
+  .card-detail{
+    width: 80%;
+    height: 700px;
+    background-color: rgba(86, 90, 187, 1);
+    margin-top: 30px;
+    margin-left: 40px;
+    border-radius: 20px;
+    padding: 10px;
+  }
+  /* input */
+  /* Add this in your component's CSS file or style tag */
+.payment-form {
+    width: 360px;
+    margin: auto;
+  }
+  
+  .form-row {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  
+  .expiry-cvv {
+    display: flex;
+    gap: 4px;
+    
+  }
+  
+  label {
+    color: #fff; /* Adjust color as needed */
+    margin: 5px;
+  }
+  
+  input {
+    padding: 8px;
+    border: 1px solid rgba(98, 104, 198, 1);
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: rgba(98, 104, 198, 1);
+    color: white;
+  }
+  ::placeholder{
+    color: white;
+  }
+  textarea:focus, input:focus{
+    outline: none;
+}
+  
+  /* Styles for the credit card visual representation */
+  .react-credit-card-2__card {
+    margin-top: 20px;
+  }
+  
+  
+  .card-format{
+    margin-bottom: 10px;
+  }
+  
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+     -webkit-appearance: none;
+  }
+  
+  .total-product-price{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 7px;
+  }
+  .ship{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 7px;
+
+  }
+  .total{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 7px;
+  }
+ .checkout-box{
+    display: flex;
+    padding: 0 10px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 25px;
+    width: 360px;
+    border-radius: 12px;
+    height: 50px;
+    background-color: rgba(77, 225, 193, 1);
+    border: 1px solid rgba(77, 225, 193, 1);
+    color: white;
+
+  }
+  .error-message {
+    color: red;
+    margin-top: 10px;
+  }
+  .place-order-btn-desktop {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    width: 150px;
+    height: 55px;
+    position: fixed ;
+    right: 200px;
+    font-size: 21px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 80px;
+  }
+  
+  .place-order-btn-desktop:hover {
+    background-color: #45a049;
+  }
+  .place-order-btn-mobile{
+    display: none;
+  }
+  
+  
+
+
+
+
+  @media only screen and (max-width: 1349px){
+    .cart-container{
+      flex-direction: column;
+    }
+    .left-cart-items{
+      width: auto;
+      margin-top: 70px;
+      height: auto;
+    }
+    .right-payment-card{
+      width: auto;
+    }
+    .cart-card{
+      width: auto;
+      margin-left: 0px;
+      margin-right: 10px;
+      flex-direction: column;
+      height: auto;
+    }
+    .cart-title{
+      max-width: 80%;
+      min-width: 71%;
+    }
+    .right-cart-card{
+      width: 300px;
+      justify-content: space-between;   
+      margin-top: 3px;
+     }
+    .cart-price{
+      padding-right: 0px;
+      padding-left: 0px;
+    }
+    /* .cart-del{
+      margin-left: 43px;
+    } */
+    .payment-form{
+      width: 300px;
+    }
+    .card-detail{
+      width: auto;
+      margin-left:  10px;
+      margin-right:  10px;
+    }
+    .cart-expiry{
+      width: 135px;
+    }
+    .cart-cvv{
+      width: 140px;
+    }
+    .checkout-box{
+      font-size: 20px;
+       width: 291px;
+    }
+    .place-order-btn-desktop {
+      display: none;
+     
+    }
+    .place-order-btn-mobile{
+      position: absolute ;
+      display: block;
+      font-size: 21px;
+      margin-top: 35px;
+      background-color: #4caf50;
+      color: white;
+      padding: 10px 15px;
+      width: 150px;
+      height: 55px;
+      right: 200px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+
+    }
+
+  }

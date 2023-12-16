@@ -16,7 +16,7 @@ function App() {
      <Navbar/>
      <div className="content">
      <Routes>
-      <Route index element={<Home/>} />
+      <Route path='/' element={<Home/>} />
       <Route path='/mens' element={<MensWearing/>} />
       <Route path='/womens' element={<Womenwearing/>} />
       <Route path='/jewelry' element={<Jewelery/> } />

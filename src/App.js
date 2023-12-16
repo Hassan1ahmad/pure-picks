@@ -12,7 +12,7 @@ import Footer from './components/Footer';
 function App() {
   return (
     <div className='wrapper'>
-     <BrowserRouter>
+     <BrowserRouter basename="/pure-picks">
      <Navbar/>
      <div className="content">
      <Routes>

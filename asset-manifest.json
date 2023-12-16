@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/pure-picks/static/css/main.44c9d158.css",
-    "main.js": "/pure-picks/static/js/main.d4cc8b49.js",
+    "main.js": "/pure-picks/static/js/main.b54ebe4b.js",
     "static/js/787.a7c6b8b0.chunk.js": "/pure-picks/static/js/787.a7c6b8b0.chunk.js",
     "static/media/jewlory.jpg": "/pure-picks/static/media/jewlory.e84f52c92dd4c84ca702.jpg",
     "static/media/women.jpg": "/pure-picks/static/media/women.511b8b5f6a90db4071bd.jpg",
@@ -10,11 +10,11 @@
     "static/media/logo.png": "/pure-picks/static/media/logo.3f5d8a988cdbeffdd6d9.png",
     "index.html": "/pure-picks/index.html",
     "main.44c9d158.css.map": "/pure-picks/static/css/main.44c9d158.css.map",
-    "main.d4cc8b49.js.map": "/pure-picks/static/js/main.d4cc8b49.js.map",
+    "main.b54ebe4b.js.map": "/pure-picks/static/js/main.b54ebe4b.js.map",
     "787.a7c6b8b0.chunk.js.map": "/pure-picks/static/js/787.a7c6b8b0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.44c9d158.css",
-    "static/js/main.d4cc8b49.js"
+    "static/js/main.b54ebe4b.js"
   ]
 }

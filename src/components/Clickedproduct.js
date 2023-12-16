@@ -14,6 +14,8 @@ function Clickedproduct(props) {
 
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [buttonText, setButtonText] = useState('Add to Cart');
+
 
   const dispatch = useDispatch()
   const navigate = useNavigate()
@@ -29,10 +31,11 @@ function Clickedproduct(props) {
     setProducts(json)
     setLoading(false)
   }
-  
-  if (isModelOpen===true) {
-    
-  }
+
+      setTimeout(() => {
+        setButtonText('Add to Cart');
+      }, 3000);
+      
     useEffect(() => {
       if (isModelOpen===true) {
         fetchdata()
@@ -79,9 +82,9 @@ function Clickedproduct(props) {
             <div className="price">Price:{products.price}&#36;</div>
             <div className="buttons">
               <div onClick={()=>{navigate('/cart');dispatch(addtocart(products))}} className="buy">Buy Now</div>
-              <div className="tocart" onClick={(e) => { e.preventDefault(); dispatch(addtocart(products)) }} >Add to Cart</div>
+              <button  className="tocart" disabled={buttonText === 'Added to Cart'} onClick={(e) => { e.preventDefault(); dispatch(addtocart(products));setButtonText('Added to Cart') }} >{buttonText}</button>
             </div>
-
+  
 
           </div>
         </div>
